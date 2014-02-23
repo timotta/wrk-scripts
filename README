@@ -1,0 +1,9 @@
+Script Lua to work better with wrk ( https://github.com/wg/wrk )
+
+multiplepaths.lua
+
+  Access lot of paths at the same domain using this sintax:
+
+  wrk -c 100 -t 4 -d 30s -s wrk-scripts/multiplepaths.lua http://localhost
+  
+  You have to create a file paths.txt with one path per line
