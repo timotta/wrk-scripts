@@ -1,4 +1,4 @@
-counter = 0
+counter = 1
 
 -- Initialize the pseudo random number generator - http://lua-users.org/wiki/MathLibraryTutorial
 math.randomseed(os.time())
@@ -44,7 +44,7 @@ request = function()
     path = paths[counter]
     counter = counter + 1
     if counter > #paths then
-      counter = 0
+      counter = 1
     end
     return wrk.format(nil, path)
 end
